@@ -68,7 +68,7 @@ export LD_LIBRARY_PATH="/app/mono/lib:${LD_LIBRARY_PATH}"
 
 BUILD_CACHE_DIR=${CACHE_DIR}/build/
 mkdir -p ${BUILD_CACHE_DIR}
-xbuild /property:Configuration=Release /property:OutDir=${BUILD_CACHE_DIR} ${SLN} | indent
+xbuild /property:Configuration=Debug /property:OutDir=${BUILD_CACHE_DIR} ${SLN} | indent
 cp -r ${BUILD_CACHE_DIR}* ${BUILD_DIR}
 
 echo "-----> Build SUCCESS"
