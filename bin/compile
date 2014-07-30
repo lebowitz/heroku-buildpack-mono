@@ -41,7 +41,7 @@ MONO_RT_DIR=${CACHE_DIR}/mono
 if [ ! -d ${MONO_RT_DIR} ]; then
   rm -rf ${MONO_RT_DIR}
   echo "-----> Downloading ${MONO_RT_DOWNLOAD_URL}"
-  curl ${MONO_RT_DOWNLOAD_URL} --silent | tar xj -C ${CACHE_DIR}
+  curl ${MONO_RT_DOWNLOAD_URL} --silent | tar xz -C ${CACHE_DIR}
 fi
 
 #ln -sf "${MONO_RT_DIR}" .
