@@ -21,7 +21,8 @@ indent() {
 
 MONO_VERSION="3.4.0"
 XSP_VERSION="3.0.11"
-MONO_RT_DOWNLOAD_URL="http://heroku-buildpacks.qiniudn.com/mono-rt-${MONO_VERSION}.tar.bz2"
+
+MONO_RT_DOWNLOAD_URL="https://s3.amazonaws.com/mono-binaries/mono-${MONO_VERSION}.tar.gz"
 BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
